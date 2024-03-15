@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 CORS(app)
 
-client = MongoClient('mongodb+srv://jordan:MKg7w7R1D3Mmre4N@cluster0.9eia799.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+client = MongoClient('')
 db = client['OlistDb']  
 orders_payments_col = db['orders_payments']
 customers_col = db['customer']
